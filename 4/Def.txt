@@ -1,0 +1,27 @@
+GIT, Linux Kernel (History)
+
+Linus (Linux Founder)
+
+Linux Family (Distros)
+
+GIT, Linux (C Language)
+
+GUI (Graphical User Interface)
+
+Open Source vs Close Source
+
+Open Source - Codebase Public
+Close Source - Codebase Private
+
+OPEN SOURCE CONTRIBUTIONS
+
+GITHUB OVERVIEW (PR, ISSUES, SETTINGS)
+
+Public Project CONTRIBUTIONS
+
+Repository OVERVIEW
+
+README.md (What is the purpose of this project).
+CONTRIBUTING.md (How to contribute within this project).
+
+GIT PULL BRANCH

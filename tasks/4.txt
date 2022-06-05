@@ -1,0 +1,6 @@
+ASSIGNMENT - 2  (Pull Request)
+Contribute: https://github.com/jobream/List-of-Learning-Resources
+Share link of PR on Slack.
+
+
+Read: https://github.com/jobream/List-of-Learning-Resources/blob/master/CONTRIBUTING.md

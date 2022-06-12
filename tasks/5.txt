@@ -1,0 +1,6 @@
+TASK - DEADLINE TOMORROW
+1) Create PUT
+2) Create PATCH
+3) Create DELETE 
+
+API's with boilarplate code

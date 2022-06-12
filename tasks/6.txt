@@ -1,0 +1,8 @@
+Assignment - 3 (TODO LIST) - Mongoose + MongoDB + Compase + Express + Postman
+API GET (Hint. findOne({title: "xyz"})),  
+API POST
+TODO DS
+{
+title: String,
+list: Array
+}

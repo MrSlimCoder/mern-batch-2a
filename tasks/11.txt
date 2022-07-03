@@ -1,0 +1,5 @@
+ASSIGNMENT - 6 (Class Based React.js) 
+
+Life Cycle (MD file within the repo)
+Hello World (Program) 
+Reason for shifting from Class to Function (Research) (MD file within the repo) 

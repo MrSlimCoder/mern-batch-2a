@@ -1,0 +1,1 @@
+Our assets (image, stylesheet) will be here

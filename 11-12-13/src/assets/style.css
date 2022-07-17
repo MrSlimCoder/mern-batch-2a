@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    background-color: bisque;
+}
+
+input {
+    padding: 10px;
+}
+
+input:hover {
+    color: black;
+}
+
+#submit {
+    font: 1.5em sans-serif;
+}

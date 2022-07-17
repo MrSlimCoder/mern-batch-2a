@@ -1,0 +1,6 @@
+ASSIGNMENT
+
+Minesweeper (Assignment) (Deadline Next Week):
+- Matrix (5x5)
+- Random (Boom)
+- Check (Nearest but not on boom) - 2 columns and 3 rows

@@ -1,9 +1,7 @@
 const Todo = require("../model/Todo");
 
 exports.getTodo = async (req, res) => {
-    const query = req.query;
-    const data = await Todo.findOne({
-        title: query.title,
+    const data = await Todo.find({
         delete: false
     });
     if (data) {

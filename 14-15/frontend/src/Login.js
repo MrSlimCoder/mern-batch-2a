@@ -12,6 +12,7 @@ function Login() {
 
     const response = await axios.post("http://localhost:4000/user/login", { email, password });
     if (response?.status === 200) {
+      localStorage.setItem("token",response.data.data[1].token);
       navigate("/loggedIn", { replace: true });
     }
     else {

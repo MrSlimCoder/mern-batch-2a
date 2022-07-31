@@ -48,8 +48,8 @@ exports.patchTodo = async (req, res) => {
 }
 
 exports.deleteTodo = async (req, res) => {
-    const body = req.body;
-    const updateTodo = await Todo.findOneAndUpdate(body, { delete: true }, { new: true });
+    const query = req.query;
+    const updateTodo = await Todo.findOneAndUpdate(query, { delete: true }, { new: true });
     if (updateTodo) {
         return res.status(200).json({
             message: "My Todo",

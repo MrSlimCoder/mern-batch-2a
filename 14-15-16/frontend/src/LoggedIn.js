@@ -1,12 +1,13 @@
 import axios from "axios";
 import { useRef, useEffect, useState } from "react";
+import _ from "lodash";
 
 function LoggedIn() {
     const [todo, setTodo] = useState([]);
 
     useEffect(() => {
         getTodo();
-    });
+    },[]);
 
     const title = useRef(null);
     const firstElement = useRef(null);
@@ -40,7 +41,26 @@ function LoggedIn() {
             }
         });
         if (response?.status === 200) {
-            console.log(response);
+            todo.push(response.data.data);
+            setTodo([...todo]);
+        }
+        else {
+            console.log("Todo Not Found");
+        }
+
+      }
+
+      async function deleteTodo(id) {
+
+        const response = await axios.delete(`http://localhost:4000/todo?_id=${id}`,{
+            headers: {
+                Authorization: token
+            }
+        });
+        if (response?.status === 200) {
+            var index = _.findIndex(todo, { _id: id });
+            todo.splice(index, 1);
+            setTodo([...todo]);
         }
         else {
             console.log("Todo Not Found");
@@ -59,7 +79,7 @@ function LoggedIn() {
             <button onClick={() => postTodo()}>Submit</button>
             {
                 todo.map((value, index) => {
-                    return <div key={index}>
+                    return <div key={index} onClick={() => deleteTodo(value?._id)}>
                         <h4>Title: {value.title}</h4>
                         <p>List: {value.list.toString()}</p>
                     </div>
